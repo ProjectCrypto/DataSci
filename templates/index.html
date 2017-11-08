@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+
+{% block content %}
+{% for post in TOPIC_DICT %}
+<div class="mdl-grid site-max-width">
+    <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp welcome-card portfolio-card">
+            <img src="{{ url_for('static',filename='images/')}}{{ post.image }}" class="portrait"/>
+        <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">{{ post.title }}</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+            {{ post.summary }}
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="{{ url_for('posting',post_url=post.link) }}" target="_blank">
+                << READ MORE
+            </a>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+
+{% endblock %}
