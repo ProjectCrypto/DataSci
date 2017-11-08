@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+    <div class="section white">
+        <div class="row container">
+            <h2 class="header">About DataSci</h2>
+            <p class="grey-text text-darken-3 lighten-3">
+                DataSci is a way of showing our developing data science work as we grow and learn.
+                All work will be shared and on this site and provided on our <a href="https://github.com/ProjectCrypto"><b>Git Hub</b></a>
+                page. We are all data scientist trying to learn and hope that this will help others
+                and encourage others to share their work.
+            </p>
+        </div>
+    </div>
+
+    <div class="section white">
+        <div class="row container">
+            <h2 class="header">Eric Entrup</h2>
+            <p class="grey-text text-darken-3 lighten-3">
+                Hi, I'm Eric.
+                
+                I am a passionate data scientist trying to learn about the world. Learning everything from web development to machine learning with Python I was able to put this website together using Flask.
+            </p>
+        </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="{{ url_for('static',filename='images/analysis1.png') }}"></div>
+    </div>
+    <div class="section white">
+        <div class="row container">
+            <h2 class="header">Another person</h2>
+            <p class="grey-text text-darken-3 lighten-3">Some information about something or someone..</p>
+        </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="{{ url_for('static',filename='images/analysis1.png') }}"></div>
+    </div>
+{% endblock %}
+
+{% block customjs %}
+    <script>
+        $(document).ready(function(){
+            $('.parallax').parallax();
+        });
+    </script>
+{% endblock %}

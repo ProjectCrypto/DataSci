@@ -10,6 +10,10 @@ app = Flask(__name__)
 def index():
     return render_template("index.html", TOPIC_DICT = TOPIC_DICT )
 
+@app.route("/about/")
+def about():
+    return render_template("about.html")
+
 @app.route("/posting/<post_url>")
 def posting(post_url):
     return render_template("post.html",post_url = post_url)
