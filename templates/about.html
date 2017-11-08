@@ -15,27 +15,48 @@
         </div>
     </div>
 
+
+
     <div class="section white">
-        <div class="row container">
+      <div class="col s12 m8 offset-m2 l6 offset-l3">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="{{ url_for('static',filename='images/eric.jpg') }}" alt="" class="circle responsive-img">
+            </div>
+            <div class="col s10">
             <h2 class="header">Eric Entrup</h2>
-            <p class="grey-text text-darken-3 lighten-3">
-                Hi, I'm Eric.
-                
-                I am a passionate data scientist trying to learn about the world. Learning everything from web development to machine learning with Python I was able to put this website together using Flask.
-            </p>
+              <span class="black-text">
+                Hi, I'm Eric,
+                  
+                I am a passionate learner in machine learning and computer science. Learning to build websites like this one and the knowledge of data science to give this site great content!
+              </span>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <div class="parallax-container">
-      <div class="parallax"><img src="{{ url_for('static',filename='images/analysis1.png') }}"></div>
+      <div class="parallax"><img src="{{ url_for('static',filename='images/about1.jpg') }}"></div>
     </div>
     <div class="section white">
-        <div class="row container">
-            <h2 class="header">Another person</h2>
-            <p class="grey-text text-darken-3 lighten-3">Some information about something or someone..</p>
+      <div class="col s12 m8 offset-m2 l6 offset-l3">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="{{ url_for('static',filename='images/about2.jpg') }}" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+            </div>
+            <div class="col s10">
+              <span class="black-text">
+                This is a square image. Add the "circle" class to it to make it appear circular.
+              </span>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <div class="parallax-container">
-      <div class="parallax"><img src="{{ url_for('static',filename='images/analysis1.png') }}"></div>
+      <div class="parallax"><img src="{{ url_for('static',filename='images/about2.jpg') }}"></div>
     </div>
 {% endblock %}
 

@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-
+import numpy as np
 from content_manager import Content
 
 TOPIC_DICT = Content()

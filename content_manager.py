@@ -1,17 +1,17 @@
 def Content():
     TOPIC_DICT = [
-        {'title':'Welcome',
-         'link':'website-example.html',
-         'summary':'Example of a posting to show how awesome this site will be.',
-         'image':'analysis1.png'
+        {'title':'Examlple Post',
+         'link':'example.html',
+         'summary':'This will serve to help mitigate the creation of new posts and how each post can be used.',
+         'image':'example.jpg'
         },
         {'title':'Another Project!',
-         'link':'posts/website-example.html',
+         'link':'website-example.html',
          'summary':'With a different description...',
          'image':'analysis2.jpg'
         },
         {'title':'Another Project Again!!',
-         'link':'posts/website-example.html',
+         'link':'website-example.html',
          'summary':'With a different description...',
          'image':'analysis3.png'
         }
