@@ -1,0 +1,31 @@
+
+/*Start Cards*/
+.card {
+  text-align: center;
+}
+
+@media (max-width: 990px) {
+  .resizeimg {
+    height: auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .resizeimg {
+    width: auto;
+    height: 350px;
+  }
+}
+
+.card:hover {
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+/*End Cards*/
+
+/*Start Pagination*/
+.pagination { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*End Pagination*/
