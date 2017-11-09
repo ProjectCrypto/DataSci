@@ -23,7 +23,11 @@
 /*End Cards*/
 
 /*Start Pagination*/
-
+.pagination { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /*End Main D3 Style*/
 
